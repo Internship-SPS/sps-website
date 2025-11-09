@@ -11,7 +11,7 @@ function App() {
   return (
     <>
 
-  <div className="container-fluid mx-5">
+  <div className="mx-50 ">
       <Navbar />
       <HeroSection/>
       <Footer/>
