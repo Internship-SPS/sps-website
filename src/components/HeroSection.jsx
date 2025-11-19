@@ -1,4 +1,6 @@
 import React from "react";
+import SpsVerticals from "./SpsVerticals";
+import Partners from "./Partners";
 
 const HeroSection = () => {
   return (
@@ -62,7 +64,7 @@ const HeroSection = () => {
             src="/images/Hero-curve-overlay.svg"
             alt="curve overlay"
             className="w-full md:w-3/5 lg:w-2/3 object-cover"
-          />sectionasdfasdfasd
+          />
         </div>
 
 
@@ -154,7 +156,7 @@ const HeroSection = () => {
       <section className="bg-gray-50">
         <section className=" pt-10 mb-10">
 
-          <div className="mx-20 grid grid-cols-2 gap-8">
+          <div className="container mx-auto px-5 md:px-10 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <div className="flex p-5" style={{ backgroundColor: "#FEF8E6" }}>
               <div className="container">
@@ -208,7 +210,7 @@ const HeroSection = () => {
 
 
         <section className="pt-20 pb-16">
-          <div className="mx-auto max-w-[1500px] px-8 grid grid-cols-3 gap-8">
+          <div className="mx-auto max-w-[1500px] px-5 md:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
            
             <div className=" relative text-center px-6 pb-7 mb-10  bg-white w-100 shadow-lg rounded-2xl" >
@@ -233,7 +235,7 @@ const HeroSection = () => {
                   className="w-16 h-16 rounded-md"
                 />
               </div>
-              <h4 className="mb-5 mt-20 font-semibold text-2xl">CS</h4>
+              <h4 className="mb-5 mt-20 font-semibold text-2xl">CSM</h4>
               <p className="mb-10">We empower organizations to fortify their security management through our comprehensive CSM. Our approach is rooted in standardization, specifically around the NIST framework. CSM serves as a powerful tool to elevate your security posture, focusing on the critical domains of Identify, Protect, Detect, Respond, and Recover. Key Features of Our CSM Services: Maturity Augmentation: CSM enables organizations to enhance the maturity levels of People, Processes, and Technology, ensuring a holistic approach to cybersecurity that aligns with industry best practices.</p>
               <a className="text-[#007BFF] font-medium">Learn More</a>
             </div>
@@ -326,6 +328,22 @@ const HeroSection = () => {
 
         </section>
       </section>
+
+      <Partners />
+      <SpsVerticals />
+
+      {/* Award-Winning Team Section */}
+      <section className="w-full bg-[#2d1b4e] py-12">
+        <div className="container mx-auto px-5 text-center">
+          <h2 className="text-xl md:text-2xl font-bold text-white mb-6">
+            We have an award-winning team that includes IBM-certified inventors and champions who have won multiple worldwide competitions.
+          </h2>
+          <p className="text-xs md:text-sm leading-relaxed max-w-5xl mx-auto text-white">
+            As an enterprise-class innovator and solution creator with expertise across all phases of product design, development, deployment, security, operations, monitoring, and support, we have been helping our clients build, deploy and secure applications. Our development, quality, cybersecurity, training, operations, monitoring, and support teams work in tandem to create high-performance, secure, reliable, scalable, and manageable systems.
+          </p>
+        </div>
+      </section>
+      
     </>
 
   );
